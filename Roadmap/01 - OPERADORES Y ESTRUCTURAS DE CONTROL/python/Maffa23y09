@@ -1,0 +1,96 @@
+# URL oficial de Python: https://www.python.org/
+
+# Operadores Aritméticos
+print(f"Operadores Aritméticos:")
+print(f"Suma: {3 + 2}")
+print(f"Resta: {3 - 2}")
+print(f"Multiplicación: {3 * 2}")
+print(f"División: {3 / 2}")
+print(f"División Entera: {3 // 2}")
+print(f"Resto: {3 % 2}")
+print(f"Potencia: {3 ** 2}")
+
+# Operadores Lógicos
+print(f"\nOperadores Lógicos:")
+print(f"A y B (AND): {3 > 1 and 2 < 3}")
+print(f"A o B (OR): {3 > 1 or 2 > 3}")
+print(f"No A (NOT): {not (3 > 1)}")
+
+# Operadores de Comparación
+print(f"\nOperadores de Comparación:")
+print(f"A igual a B? {3 == 2}")
+print(f"A diferente de B? {3 != 2}")
+print(f"A mayor que B? {3 > 2}")
+print(f"A menor que B? {3 < 2}")
+print(f"A mayor o igual que B? {3 >= 2}")
+print(f"A menor o igual que B? {3 <= 2}")
+
+# Operadores de Asignación
+x = 2
+print(f"\nOperadores de Asignación:")
+x += 1  # x = x + 1
+print(f"x += 1: {x}")
+x -= 1  # x = x - 1
+print(f"x -= 1: {x}")
+x *= 2  # x = x * 2
+print(f"x *= 2: {x}")
+x /= 2  # x = x / 2
+print(f"x /= 2: {x}")
+
+# Operadores de Identidad
+print(f"\nOperadores de Identidad:")
+print(f"[1, 2] es igual a [1, 2]? {[1, 2] is [1, 2]}")
+print(f"[1, 2] no es igual a [1, 2]? {[1, 2] is not [1, 2]}")
+
+# Operadores de Pertenencia
+print(f"\nOperadores de Pertenencia:")
+print(f"1 está en [1, 2]? {1 in [1, 2]}")
+print(f"3 no está en [1, 2]? {3 not in [1, 2]}")
+
+# Operadores de Bits
+print(f"\nOperadores de Bits:")
+print(f"3 & 2 (AND): {3 & 2}")
+print(f"3 | 2 (OR): {3 | 2}")
+print(f"3 ^ 2 (XOR): {3 ^ 2}")
+print(f"~3 (NOT): {~3}")
+print(f"3 << 1 (Shift Izquierda): {3 << 1}")
+print(f"3 >> 1 (Shift Derecha): {3 >> 1}")
+
+# Estructuras de Control: Condicionales
+print(f"\nEstructuras de Control: Condicionales:")
+if 3 > 2:
+    print(f"3 es mayor que 2")
+elif 3 == 2:
+    print(f"3 es igual a 2")
+else:
+    print(f"3 es menor que 2")
+
+# Estructuras de Control: Iterativas (Bucles)
+print(f"\nEstructuras de Control: Iterativas:")
+print("Bucle while (contando hasta 2):")
+i = 0
+while i < 2:
+    print(i)
+    i += 1
+
+print("Bucle for (recorriendo la lista):")
+for num in [1, 2]:
+    print(num)
+
+# Excepciones
+print(f"\nEstructuras de Control: Excepciones:")
+try:
+    result = 3 / 0  # Esto generará una excepción
+except ZeroDivisionError:
+    print("¡No puedes dividir por cero!")
+else:
+    print(f"Resultado: {result}")
+finally:
+    print("Bloque finally ejecutado.")
+
+# DIFICULTAD EXTRA (Imprimir números entre 2 y 5, pares, que no sean 4 ni múltiplos de 3)
+print(f"\nDIFICULTAD EXTRA:")
+print("Números entre 2 y 5, pares, que no son ni el 4 ni múltiplos de 3:")
+for num in range(2, 6):
+    if num % 2 == 0 and num != 4 and num % 3 != 0:
+        print(num)
