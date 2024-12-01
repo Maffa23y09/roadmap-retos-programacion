@@ -1,0 +1,29 @@
+# URL oficial de Python: https://www.python.org/
+
+# Comentario de una línea: Este es un comentario en Python
+
+"""
+Comentario de múltiples líneas:
+Python es un lenguaje de programación muy popular
+y fácil de aprender.
+"""
+
+'''
+Otra forma de comentario de múltiples líneas en Python.
+'''
+
+# Crear una variable
+mi_variable = "Aprendiendo Python" 
+
+# Crear una constante (Python no tiene constantes estrictas, pero usamos convención de mayúsculas)
+MI_CONSTANTE = 3.1416
+
+# Crear variables representando los tipos de datos primitivos en Python
+texto = "Hola, mundo"    # String (cadena de texto)
+entero = 42              # Integer (número entero)
+decimal = 3.14           # Float (número decimal)
+booleano = True          # Boolean (valor lógico: True o False)
+nulo = None              # NoneType (representa la ausencia de valor)
+
+# Imprimir por terminal
+print("¡Hola, Python!") 
